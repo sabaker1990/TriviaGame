@@ -1,14 +1,14 @@
 var correct = 1;
 var incorrect = 1;
-var timer = 15;
+
 
 var trivia = {
-	question1: "What is my favorite color?",
+	question1: "What type of dog do I have?",
 	question2: "What is my dog's name?",
-	question3: "What is my birth year?",
-	answer1: ["yellow", "pink", "blue"],
+	question3: "How much does he weigh?",
+	answer1: ["BostonTerrier", "Boxer", "PittBull"],
 	answer2: ["Eddy", "Bosco", "Tootie"],
-	answer3: ["1972", "2000", "1990"],
+	answer3: ["15lbs", "50lbs", "33lbs"],
 }
 
 $(document).ready(function(){
@@ -35,6 +35,8 @@ $(document).ready(function(){
 	$("#a3-1").html(trivia.answer3[0]);
 	$("#a3-2").html(trivia.answer3[1]);
 	$("#a3-3").html(trivia.answer3[2]);
+
+
 
 $("#button-2").on("click", function() {
 	$("#button-2").hide();
